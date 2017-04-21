@@ -3,11 +3,18 @@
   "main": "dist/zxing-pdf417.js",
   "version": "0.0.3",
   "description": "Javascript port of the ZXing's PDF417 module.",
-  "keywords": ["pdf417", "OCR", "zxing"],
+  "keywords": [
+    "pdf417",
+    "OCR",
+    "zxing"
+  ],
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/coinme/js-zxing-pdf417"
+  },
+  "dependencies": {
+    "big-integer": "^1.6.21"
   },
   "devDependencies": {
     "grunt": "~0.4.1",

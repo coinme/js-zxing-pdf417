@@ -19,8 +19,8 @@ module.exports = function(grunt) {
     concat: {
       dist: {
         options: {
-          banner: '(function(exports, Error, document, Uin8Array, Uint32Array, BigInteger, undefined){\ndocument.addEventListener("DOMContentLoaded", function() {\n',
-          footer: "}, false);\n}(window, window.Error, window.document, window.Uint8Array, window.Uint32Array, window.bigInt));\n"
+          banner: '(function(exports, Error, Uin8Array, Uint32Array, BigInteger, undefined){\n',
+          footer: "\n}(module.exports, Error, Uint8Array, Uint32Array, require('big-integer')));\n"
         },
         src: [
           'SupportClass.js',
