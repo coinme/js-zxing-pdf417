@@ -39,6 +39,9 @@ ZXing.BinaryBitmap = function (binarizer) {
         this.matrix = matrix;
     }
 };
+
+module.exports.ZXing.BinaryBitmap = ZXing.BinaryBitmap;
+
 ZXing.BinaryBitmap.prototype.get_Width = function () {
     return this.binarizer.get_Width();
 };
