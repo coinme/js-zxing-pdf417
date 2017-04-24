@@ -1,7 +1,7 @@
 {
   "name": "js-zxing-pdf417",
   "main": "dist/zxing-pdf417.js",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Javascript port of the ZXing's PDF417 module.",
   "keywords": [
     "pdf417",
