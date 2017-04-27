@@ -488,6 +488,9 @@ ZXing.BinaryBitmap = function (binarizer) {
         this.matrix = matrix;
     }
 };
+
+module.exports.ZXing.BinaryBitmap = ZXing.BinaryBitmap;
+
 ZXing.BinaryBitmap.prototype.get_Width = function () {
     return this.binarizer.get_Width();
 };
@@ -982,6 +985,8 @@ ZXing.BitmapLuminanceSource = function (bitmap, w, h) {
     //console.timeEnd("luminances")
   }
 };
+
+module.exports.ZXing.BitmapLuminanceSource = ZXing.BitmapLuminanceSource;
 
 ZXing.BitmapLuminanceSource.prototype.CreateLuminanceSource = function (newLuminances, width, height) {
   return (function () {
@@ -1984,6 +1989,9 @@ ZXing.Common.HybridBinarizer.prototype.get_BlackMatrix = function () {
     this.binarizeEntireImage();
     return this.matrix;
 };
+
+module.exports.ZXing.HybridBinarizer = ZXing.HybridBinarizer;
+
 ZXing.Common.HybridBinarizer.prototype.createBinarizer = function (source) {
     return new ZXing.Common.HybridBinarizer(source);
 };

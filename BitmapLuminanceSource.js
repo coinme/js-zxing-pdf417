@@ -78,6 +78,8 @@ ZXing.BitmapLuminanceSource = function (bitmap, w, h) {
   }
 };
 
+module.exports.ZXing.BitmapLuminanceSource = ZXing.BitmapLuminanceSource;
+
 ZXing.BitmapLuminanceSource.prototype.CreateLuminanceSource = function (newLuminances, width, height) {
   return (function () {
     var $v1 = new ZXing.BitmapLuminanceSource(width, height);
