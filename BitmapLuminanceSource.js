@@ -35,11 +35,13 @@ ZXing.BitmapLuminanceSource = function (bitmap, w, h) {
       width = w;
       height = h;
       data = bitmap;
-    } else if (bitmap instanceof ImageData) {
+    } /* NOTE: the following commented-out code was removed for 'Coinme-interop-wis' repository's WIS-4000
+               ID scanner PDF417 barcode to be decoded properly.   */
+      /*else if (bitmap instanceof ImageData) {
       width = w || bitmap.width;
       height = h || bitmap.height;
       data = bitmap.data;
-    } else {
+    }*/ else {
       canvas = w;
       width = canvas.naturalWidth;
       height = canvas.naturalHeight;
