@@ -41,7 +41,7 @@ ZXing.PDF417.Internal.EC.ModulusGF = function (modulus, generator) {
     this.Zero = new ZXing.PDF417.Internal.EC.ModulusPoly(this, new Int32Array([0]));
     this.One = new ZXing.PDF417.Internal.EC.ModulusPoly(this, new Int32Array([1]));
 };
-ZXing.PDF417.Internal.EC.ModulusGF.PDF417_GF = new ZXing.PDF417.Internal.EC.ModulusGF(ZXing.PDF417.PDF417Common.NUMBER_OF_CODEWORDS, 3);
+ZXing.PDF417.Internal.EC.ModulusGF.PDF417_GF = new ZXing.PDF417.Internal.EC.ModulusGF(ZXing.PDF417.PDF417Common.NUMBER_OF_CODEWORDS, 8);
 ZXing.PDF417.Internal.EC.ModulusGF.prototype.buildMonomial = function (degree, coefficient) {
     if (degree < 0) {
         throw new Error();
