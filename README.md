@@ -17,6 +17,30 @@ Build
   
   grunt
 
+API
+-----
+Example - crop an image context:
+
+```let imgContext = await _loadImageContext(imgFilePath);```
+
+```let canvas = new Canvas(imgContext.img.width, imgContext.img.height);```
+
+```let topHalfContext = canvas.getContext('2d');```
+
+```topHalfContext.drawImage(imgContext, 0, 0, imgContext.img.widdth, imgContext.img.height / 2);```
+
+Example - rotate an image context:
+
+```let source = new BitmapLuminanceSource(ctx, img);```
+
+```let binarizer = new HybridBinarizer(source);```
+
+```let bitmap = new BinaryBitmap(binarizer);```
+
+```let rotate90 = bitmap.rotateCounterClockwise();```
+
+```let rotate180 = rotate90.rotateCounterClockwise();```
+
 
 Requirements
 ------------
