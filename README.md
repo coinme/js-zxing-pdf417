@@ -27,7 +27,7 @@ Example - crop an image context:
 
 ```let topHalfContext = canvas.getContext('2d');```
 
-```topHalfContext.drawImage(imgContext, 0, 0, imgContext.img.widdth, imgContext.img.height / 2);```
+```topHalfContext.drawImage(imgContext, 0, 0, imgContext.img.width, imgContext.img.height / 2);```
 
 Example - rotate an image context:
 
